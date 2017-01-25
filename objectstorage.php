@@ -31,9 +31,9 @@ function swift_init( ) {
 
     if(!get_option('object_storage')){
       //If this isn't in the database, create all of the default values we need.
-      $swift->swift_create_bucket('WordPress');
+      $swift->swift_create_bucket('InsightMedia');
       $options = array(
-        'bucket' => 'WordPress',
+        'bucket' => 'InsightMedia',
         'expires' => '1',
         'object-prefix' => 'wp-content/uploads/',
         'copy-to-swift' => '1',
